@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_layout_profile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundcolor1"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toobar_title"
+            android:text="My Profile"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/small_text"
+            android:gravity="fill_horizontal|center" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+
+        <!--<ImageView
+            app:srcCompat="@mipmap/user_pic"
+            android:id="@+id/imageView2"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/backgroundcolor"
+
+            android:layout_centerInParent="true"
+
+            android:layout_above="@+id/input_name_wrapper"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/view_p"    />-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_name_wrapper"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/input_mobile_wrapper">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+
+
+                android:inputType="textCapSentences"
+                android:hint="@string/name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_mobile_wrapper"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:gravity="center|center_vertical"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/input_email_wrapper">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/mobile" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_email_wrapper"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_centerInParent="true"
+            android:gravity="center|center_vertical"
+
+
+            android:layout_above="@+id/input_address_wrapper">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_address_wrapper"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_centerInParent="true"
+            android:gravity="center|center_vertical"
+
+            android:layout_above="@+id/input_city_wrapper">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="@string/address" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_city_wrapper"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="80dp"
+
+            android:layout_centerInParent="true"
+            android:gravity="center|center_vertical"
+
+
+            android:layout_above="@+id/btn_save">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="@string/city"/>
+        </android.support.design.widget.TextInputLayout>
+
+    <Button android:id="@+id/btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="@string/save"
+        android:background="@color/colorMaroon"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerInParent="true"
+        android:gravity="center|center_vertical"
+
+
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

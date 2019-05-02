@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "554591713885",
+    "firebase_url": "https://geeta-59e61.firebaseio.com",
+    "project_id": "geeta-59e61",
+    "storage_bucket": "geeta-59e61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554591713885:android:2efe09eefd41d72d",
+        "android_client_info": {
+          "package_name": "com.application.aayush.geeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554591713885-06c7tr9o9biqreolp5l6s5obck8enagc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.aayush.geeta",
+            "certificate_hash": "94fe0564e5a62459976cc46761bbfb22e0a2a0c9"
+          }
+        },
+        {
+          "client_id": "554591713885-p209g4h5rgf2ngt0o8t66csvci0rblme.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.aayush.geeta",
+            "certificate_hash": "03da4c09bea4405d3e4fb3e3ad95a7bf47f4aa6c"
+          }
+        },
+        {
+          "client_id": "554591713885-pbmpgsj1rbq5fsj0ovhdrrqfktr6okbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnigb5vYHFVkLwStzxX5FVs8-3moB7aSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554591713885-pbmpgsj1rbq5fsj0ovhdrrqfktr6okbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
